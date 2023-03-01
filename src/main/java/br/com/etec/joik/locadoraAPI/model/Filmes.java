@@ -15,11 +15,11 @@ public class Filmes {
     private String nomefilme;
 
     @ManyToOne
-    @JoinColumn(name="generoid")
+    @JoinColumn(name="idgenero")
     private Genero genero;
 
     @ManyToOne
-    @JoinColumn(name="atorid")
+    @JoinColumn(name="idator")
     private Ator ator;
 
     public Long getId() {
