@@ -15,11 +15,11 @@ public class Ator {
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Integer id;
 
-    private String nome;
+    private String nomeator;
 
     @OneToMany(mappedBy="ator")
     @JsonIgnore
-    private List<Filmes> filmes = new ArrayList<>();
+    private List<Filmes> filmesator = new ArrayList<>();
 
     public Integer getId() {
         return id;
@@ -29,20 +29,20 @@ public class Ator {
         this.id = id;
     }
 
-    public String getNome() {
-        return nome;
+    public String getNomeator() {
+        return nomeator;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setNomeator(String nomeator) {
+        this.nomeator = nomeator;
     }
 
-    public List<Filmes> getFilmes() {
-        return filmes;
+    public List<Filmes> getFilmesator() {
+        return filmesator;
     }
 
-    public void setFilmes(List<Filmes> filmes) {
-        this.filmes = filmes;
+    public void setFilmesator(List<Filmes> filmesator) {
+        this.filmesator = filmesator;
     }
 
     @Override
