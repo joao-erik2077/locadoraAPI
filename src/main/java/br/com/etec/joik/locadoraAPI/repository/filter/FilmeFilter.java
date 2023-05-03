@@ -1,14 +1,11 @@
 package br.com.etec.joik.locadoraAPI.repository.filter;
 
-import br.com.etec.joik.locadoraAPI.model.Ator;
-import br.com.etec.joik.locadoraAPI.model.Genero;
-
 public class FilmeFilter {
     private String nomefilme;
 
-    private Genero genero;
+    private String nomegenero;
 
-    private Ator ator;
+    private String nomeator;
 
     public String getNomefilme() {
         return nomefilme;
@@ -18,19 +15,19 @@ public class FilmeFilter {
         this.nomefilme = nomefilme;
     }
 
-    public Genero getGenero() {
-        return genero;
+    public String getNomegenero() {
+        return nomegenero;
     }
 
-    public void setGenero(Genero genero) {
-        this.genero = genero;
+    public void setNomegenero(String nomegenero) {
+        this.nomegenero = nomegenero;
     }
 
-    public Ator getAtor() {
-        return ator;
+    public String getNomeator() {
+        return nomeator;
     }
 
-    public void setAtor(Ator ator) {
-        this.ator = ator;
+    public void setNomeator(String nomeator) {
+        this.nomeator = nomeator;
     }
 }
