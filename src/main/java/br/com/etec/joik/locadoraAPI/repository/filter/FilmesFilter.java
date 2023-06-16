@@ -1,6 +1,6 @@
 package br.com.etec.joik.locadoraAPI.repository.filter;
 
-public class FilmeFilter {
+public class FilmesFilter {
     private String nomefilme;
 
     private String nomegenero;

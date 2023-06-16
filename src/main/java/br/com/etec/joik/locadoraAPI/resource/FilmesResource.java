@@ -2,7 +2,8 @@ package br.com.etec.joik.locadoraAPI.resource;
 
 import br.com.etec.joik.locadoraAPI.model.Filmes;
 import br.com.etec.joik.locadoraAPI.repository.FilmesRepository;
-import br.com.etec.joik.locadoraAPI.repository.filter.FilmeFilter;
+import br.com.etec.joik.locadoraAPI.repository.filter.FilmesFilter;
+import br.com.etec.joik.locadoraAPI.repository.projections.FilmesDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -26,7 +27,7 @@ public class FilmesResource {
     }
 
     @GetMapping()
-    public Page<Filmes> pesquisar(FilmeFilter filmesFilter, Pageable pageable) {
+    public Page<FilmesDTO> pesquisar(FilmesFilter filmesFilter, Pageable pageable) {
         return filmesRepository.filtrar(filmesFilter, pageable);
     }
 }
